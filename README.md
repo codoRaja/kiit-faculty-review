@@ -22,7 +22,7 @@
 
 **_Database_**: MongoDB
 
-## Installation
+## Build
 
 - _Clone the repository:_
   ```bash
@@ -32,11 +32,17 @@
   ```
 - _Create a .env file in the project root directory._
   - Add your database connection details to the .env file following the specific format required by your chosen database library.
-- _Launch Development_
+- _Launch Development Server_
   ```Bash
   npm run dev
   ```
-  This will launch the development server and make the application accessible at http://localhost:3000 (default port).
+  This will launch the frontend development server and make the application accessible at http://localhost:5173 .
+  ```Bash
+  cd server
+  tsc
+  node dist/index.js
+  ```
+  This will launch the backend development server and make the application accessible at http://localhost:3000 .
 
 ## Contribution
 
